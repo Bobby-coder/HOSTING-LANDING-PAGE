@@ -416,8 +416,6 @@ body {
 }
 
 
-
-
 @media only screen and (max-width:768px){
 
     br {
@@ -603,5 +601,11 @@ body {
     .footer-container{
         align-items: center;
         text-align: center;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:768px){
+    .price-card{
+        width: 370px;
     }
 }
