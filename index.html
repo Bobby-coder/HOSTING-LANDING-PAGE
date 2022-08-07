@@ -13,8 +13,9 @@
     <div class="container">
         <div class="nav">
             <img class="nav-logo" src="assets/Logo.png" alt="">
-            <div class="list">
+            <div class="list toggle-list">
                 <ul>
+                    <button onclick="remove()" class="cross"><img src="/assets/cross-svgrepo-com.svg" alt=""></button>
                     <li class="item">home</li>
                     <li class="item">domain</li>
                     <li class="item">hosting</li>
@@ -24,33 +25,34 @@
                     <li class="item"><button>register now</button></li>
                 </ul>
             </div>
+            <button onclick = "display()" class="menu-icon"><img src="/assets/menu-bars-svgrepo-com.svg" alt=""></button>
         </div>
 
         <div class="section-container">
             <div class="section">
                 <div class="section-left">
-                    <h1>Great Website Start<br>with unlimited<br>Hosting</h1>
-                    <p>We provide the best offer of unlimited web hosting. The most complete<br>features, affordable
-                        prices, and 24/7 technical support at your<br>disposal.</p>
+                    <h1>Great Website Start<br> with unlimited<br> Hosting</h1>
+                    <p>We provide the best offer of unlimited web hosting. The most complete<br> features, affordable
+                        prices, and 24/7 technical support at your<br> disposal.</p>
                     <button>Choose Package</button>
                 </div>
                 <img class="section-img" src="assets/server.svg" alt="server-image">
             </div>
 
             <div class="section-two">
-                <img class="section-two-img" src="assets/testing.svg" alt="">
                 <div class="section-two-right">
-                    <h1>We Provide The Best <br>Quality With Low Cost</h1>
+                    <h1>We Provide The Best <br> Quality With Low Cost</h1>
                     <p>You can have a ready-made website for only a small fee. Complete <br> features will facilitate
                         the website creation process, from Auto-Install <br> Wordpress, cPanel, to free SSL</p>
                     <button class="section-two-btn">Read More</button>
                 </div>
+                <img class="section-two-img" src="assets/testing.svg" alt="">
             </div>
 
             <div class="section">
                 <div class="section-left">
-                    <h1>Number 1 Technical<br>Support In Indonesia</h1>
-                    <p>Contact Niagahoster's Custom Success Agent at any time when there is a <br>paroblem with your
+                    <h1>Number 1 Technical<br> Support In Indonesia</h1>
+                    <p>Contact Niagahoster's Custom Success Agent at any time when there is a <br>problem with your
                         website. No need to wait long, your problem will be <br>resloved quickly and in real-time via
                         intercom's live-chat.</p>
                     <button>Read More</button>
@@ -60,8 +62,9 @@
         </div>
         <div class="service-section">
             <h1>Services We Provide <br> At ThorHosting</h1>
-            <p>Contact Niagahoster's Customer Success Agent at any time when there is a <br>problem with your website.
-                No need to wait long, your problem will be <br> resolved quickly</p>
+            <p>Contact Niagahoster's Customer Success Agent at any time when there is a <br>problem with your
+                website.
+                No need to wait long, your problem will be<br> resolved quickly</p>
         </div>
         <div class="section-cards">
             <div class="card-row">
@@ -174,9 +177,11 @@
             </div>
         </div>
         <div class="customer-section">
-            <h1>Our Customer Love Us</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora ducimus explicabo optio
-                quae.<br>Facere quam perspiciatis maxime reprehenderit rem?</p>
+            <div class="heading-wrapper">
+                <h1>Our Customer Love Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora ducimus explicabo optio
+                    quae.<br>Facere quam perspiciatis maxime reprehenderit rem?</p>
+            </div>
             <div class="customer-card-row">
                 <div class="customer-card">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deleniti <br> repudiandae
@@ -224,12 +229,14 @@
                 </div>
             </div>
         </div>
-        <div class="hosting-container">
-            <div class="hosting-info">
-                <h1>Quit Worrying about <br>Ace-Hosting services</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>repudiandae tempora facilis</p>
+        <div class="hosting-wrapper">
+            <div class="hosting-container">
+                <div class="hosting-info">
+                    <h1>Quit Worrying about <br>Ace-Hosting services</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>repudiandae tempora facilis</p>
+                </div>
+                <button>register now</button>
             </div>
-            <button>register now</button>
         </div>
         <div class="footer">
             <div class="footer-container">
@@ -269,6 +276,15 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const list = document.querySelector(".list");
+
+        const display = () => list.classList.add("toggle-list")
+        const remove = () => list.classList.remove("toggle-list")
+
+        console.log(list)
+    </script>
 </body>
 
 </html>
