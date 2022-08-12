@@ -423,7 +423,13 @@ body {
     }
 
     .nav{
-        height: 12vh;
+        height: 10vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 7.5%;
+        background-color: #fff;
     }
 
     .nav-logo{
@@ -476,6 +482,7 @@ body {
 
     .section-container{
         gap: 100px;
+        margin-top: 10vh;
         margin-bottom: 100px;
     }
 
