@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 85%; 
+    width: 90%; 
     margin: 0 auto;
 }
 
@@ -30,7 +30,7 @@ body {
 
 .item{
     list-style-type: none;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: capitalize;
     font-weight: 500;
 }
@@ -41,7 +41,7 @@ body {
 
 .list > ul > .item > button{
     padding: 10px 25px;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: capitalize;
     color: #11c0f8;
     border: 2px solid #11c0f8;
@@ -64,11 +64,11 @@ body {
 }
 
 .section-container{
-    width: 85%; 
+    width: 90%; 
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 200px;
+    gap: 100px;
     margin-top: 50px;
 }
 
@@ -85,12 +85,12 @@ body {
 }
 
 .section-left > h1 , .section-two-right > h1{
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 500;
 }
 
 .section-left > p, .section-two-right >p{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     color: #8d8d8d;
 }
@@ -109,23 +109,23 @@ body {
 }
 
 .section-img, .section-two-img{
-    width: 600px;
+    width: 400px;
 }
 
 .service-section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 85%; 
+    width: 90%; 
     margin: 0 auto;
 }
 
 .service-section > h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .service-section > p{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     color: #8d8d8d;
 }
@@ -137,6 +137,7 @@ body {
     align-items: center;
     gap: 50px;
     margin: 100px 0;
+    padding: 0 5%;
 }
 
 .card-row{
@@ -145,7 +146,6 @@ body {
 }
 
 .card{
-    width: 380px;
     height: 280px;
     padding: 20px;
     display: flex;
@@ -175,7 +175,7 @@ body {
     background: linear-gradient(to right bottom, #08b4f6, #0566ea);
     align-items: center;
     gap: 40px;
-    padding: 60px 0;
+    padding: 60px 5% 60px 5%;
 }
 
 .price-section > h1{
@@ -190,11 +190,10 @@ body {
 }
 
 .price-card{
-    width: 400px;
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding: 30px 20px;
+    padding: 30px 0;
     background-color: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
@@ -316,10 +315,8 @@ body {
 
 .customer-card{
     padding: 20px;
-    width: 570px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 8px;
-    height: 250px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -416,7 +413,7 @@ body {
 }
 
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:1023px){
 
     br {
         display: none;
